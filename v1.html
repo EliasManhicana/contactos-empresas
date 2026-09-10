@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chave Directa — Contactos de RH em Moçambique</title>
+<meta name="description" content="Mais de 35 contactos directos de Recursos Humanos das maiores empresas de Moçambique, com modelo de email pronto e instruções passo-a-passo para candidaturas espontâneas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#101B2D;
+  --ink-2:#182742;
+  --ink-3:#1E3050;
+  --paper:#F3ECDD;
+  --paper-2:#E9DFC6;
+  --brass:#C69B3E;
+  --brass-light:#E0BA66;
+  --rust:#A94E2C;
+  --rust-light:#C2653D;
+  --sage:#5F7A5E;
+  --ink-text:#1B2436;
+  --paper-text:#F3ECDD;
+  --muted-on-ink:#93A3C0;
+  --muted-on-paper:#6B6152;
+  --radius-card:2px;
+  --serif:'Fraunces', serif;
+  --sans:'IBM Plex Sans', sans-serif;
+  --mono:'IBM Plex Mono', monospace;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--sans);
+  background:var(--paper);
+  color:var(--ink-text);
+  line-height:1.5;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block; max-width:100%;}
+a{color:inherit; text-decoration:none;}
+ul{list-style:none;}
+.container{
+  width:100%;
+  max-width:1160px;
+  margin:0 auto;
+  padding:0 28px;
+}
+h1,h2,h3,h4{font-family:var(--serif); font-weight:600; line-height:1.08; letter-spacing:-0.01em;}
+.section-tag{
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.02em;
+  color:var(--brass);
+}
+.on-ink .section-tag{color:var(--brass-light);}
+.serif-italic{font-style:italic; font-weight:500;}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+}
+
+/* ---------- HEADER ---------- */
+header{
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  background:rgba(16,27,45,0.0);
+  transition:background .4s ease, padding .3s ease, box-shadow .4s ease;
+  padding:26px 0;
+}
+header.scrolled{
+  background:rgba(16,27,45,0.92);
+  backdrop-filter:blur(10px);
+  padding:14px 0;
+  box-shadow:0 8px 24px rgba(0,0,0,0.25);
+}
+.header-inner{
+  display:flex; align-items:center; justify-content:space-between;
+}
+.logo{
+  display:flex; align-items:center; gap:10px;
+  color:var(--paper);
+}
+.logo svg{width:30px; height:30px; flex-shrink:0;}
+.logo-word{font-family:var(--serif); font-weight:600; font-size:1.28rem; letter-spacing:-0.01em;}
+.logo-sub{font-family:var(--mono); font-size:0.6rem; letter-spacing:0.12em; color:var(--muted-on-ink); text-transform:uppercase; display:block; margin-top:1px;}
+nav.main-nav{display:flex; gap:34px;}
+nav.main-nav a{
+  color:var(--muted-on-ink);
+  font-size:0.92rem;
+  position:relative;
+  transition:color .25s ease;
+}
+nav.main-nav a:hover{color:var(--paper);}
+nav.main-nav a::after{
+  content:'';
+  position:absolute; left:0; bottom:-6px; height:1px; width:0;
+  background:var(--brass);
+  transition:width .3s ease;
+}
+nav.main-nav a:hover::after{width:100%;}
+.header-cta{
+  background:var(--brass);
+  color:var(--ink);
+  font-weight:600;
+  font-size:0.88rem;
+  padding:11px 22px;
+  border:none;
+  cursor:pointer;
+  transition:background .25s ease, transform .2s ease;
+}
+.header-cta:hover{background:var(--brass-light); transform:translateY(-1px);}
+.menu-toggle{display:none; background:none; border:none; color:var(--paper); font-size:1.6rem; cursor:pointer;}
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative;
+  background:var(--ink);
+  color:var(--paper);
+  padding:170px 0 120px;
+  overflow:hidden;
+}
+.hero::before{
+  content:'';
+  position:absolute; inset:0;
+  background-image:
+    linear-gradient(rgba(198,155,62,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(198,155,62,0.05) 1px, transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 80% 60% at 50% 10%, black, transparent);
+  pointer-events:none;
+}
+.hero-grid{
+  position:relative;
+  display:grid;
+  grid-template-columns:1.05fr 0.95fr;
+  gap:50px;
+  align-items:center;
+}
+.eyebrow-row{
+  display:flex; align-items:center; gap:10px;
+  margin-bottom:26px;
+}
+.eyebrow-row .dot{width:6px; height:6px; background:var(--rust-light); border-radius:50%;}
+.eyebrow-row span{
+  font-family:var(--mono); font-size:0.74rem; letter-spacing:0.08em;
+  color:var(--muted-on-ink); text-transform:uppercase;
+}
+.hero h1{
+  font-size:clamp(2.4rem, 4.6vw, 3.7rem);
+  color:var(--paper);
+  margin-bottom:22px;
+}
+.hero h1 .accent{color:var(--brass-light); font-style:italic; font-weight:500;}
+.hero p.lead{
+  font-size:1.1rem;
+  color:var(--muted-on-ink);
+  max-width:520px;
+  margin-bottom:36px;
+}
+.hero-ctas{display:flex; align-items:center; gap:22px; flex-wrap:wrap; margin-bottom:56px;}
+.btn-primary{
+  background:var(--rust);
+  color:var(--paper);
+  font-weight:600;
+  font-size:1rem;
+  padding:16px 30px;
+  border:none;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+  transition:transform .2s ease, box-shadow .3s ease;
+  box-shadow:0 0 0 rgba(169,78,44,0);
+}
+.btn-primary:hover{transform:translateY(-2px); box-shadow:0 14px 30px -10px rgba(169,78,44,0.55);}
+.btn-primary span{position:relative; z-index:1;}
+.btn-ghost-link{
+  font-size:0.95rem; color:var(--paper); border-bottom:1px solid var(--brass);
+  padding-bottom:2px; transition:opacity .2s ease;
+}
+.btn-ghost-link:hover{opacity:0.75;}
+.hero-stats{
+  display:flex; gap:0;
+  border-top:1px solid rgba(255,255,255,0.12);
+  padding-top:28px;
+}
+.hero-stat{
+  flex:1; padding-right:24px;
+}
+.hero-stat + .hero-stat{
+  border-left:1px solid rgba(255,255,255,0.12);
+  padding-left:24px;
+}
+.hero-stat .num{
+  font-family:var(--serif); font-weight:600; font-size:2.1rem; color:var(--brass-light);
+  display:block;
+}
+.hero-stat .lbl{
+  font-size:0.78rem; color:var(--muted-on-ink); margin-top:2px;
+}
+
+/* Hero visual: key unlock */
+.hero-visual{
+  position:relative;
+  display:flex; align-items:center; justify-content:center;
+  min-height:420px;
+}
+.key-stage{
+  position:relative; width:100%; max-width:420px;
+}
+.key-plate{
+  position:absolute; inset:0;
+  border:1px solid rgba(198,155,62,0.25);
+}
+#keySvg{width:100%; height:auto; position:relative; z-index:2;}
+#keySvg .draw-path{
+  stroke-dasharray:900;
+  stroke-dashoffset:900;
+  animation:drawKey 2.1s cubic-bezier(.65,0,.35,1) forwards .3s;
+}
+#keySvg .fill-fade{
+  opacity:0;
+  animation:fadeInFill 1s ease forwards 1.9s;
+}
+.hero-visual .flash{
+  position:absolute; width:10px; height:10px; border-radius:50%;
+  background:var(--brass-light);
+  top:38%; left:60%;
+  opacity:0;
+  box-shadow:0 0 0 0 rgba(224,186,102,0.7);
+  animation:clickFlash 2.6s ease forwards;
+}
+@keyframes drawKey{ to{ stroke-dashoffset:0; } }
+@keyframes fadeInFill{ to{ opacity:1; } }
+@keyframes clickFlash{
+  0%,68%{opacity:0; transform:scale(0.4);}
+  74%{opacity:1; transform:scale(1.6); box-shadow:0 0 0 14px rgba(224,186,102,0);}
+  100%{opacity:0; transform:scale(2.2);}
+}
+.hero-caption{
+  text-align:center; margin-top:22px;
+  font-family:var(--mono); font-size:0.72rem; letter-spacing:0.06em;
+  color:var(--muted-on-ink);
+}
+
+/* ---------- PROBLEM SECTION ---------- */
+.problem{
+  padding:110px 0;
+  background:var(--paper);
+}
+.problem-grid{
+  display:grid; grid-template-columns:0.85fr 1.15fr; gap:70px; align-items:start;
+}
+.problem h2{
+  font-size:clamp(1.9rem, 3vw, 2.5rem);
+  color:var(--ink-text);
+}
+.stamp{
+  display:inline-flex; align-items:center; gap:8px;
+  border:1px solid var(--rust);
+  color:var(--rust);
+  font-family:var(--mono); font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase;
+  padding:6px 12px; margin-bottom:20px;
+  transform:rotate(-1.2deg);
+}
+.problem-copy p{
+  font-size:1.02rem; color:var(--muted-on-paper); margin-bottom:18px; max-width:52ch;
+}
+.problem-copy p strong{color:var(--ink-text);}
+.problem-list{margin-top:28px; display:flex; flex-direction:column; gap:16px;}
+.problem-list li{
+  display:flex; gap:14px; align-items:flex-start;
+  font-size:0.98rem; color:var(--ink-text);
+}
+.check-mark{
+  flex-shrink:0; width:20px; height:20px; margin-top:2px;
+  border:1px solid var(--sage); color:var(--sage);
+  display:flex; align-items:center; justify-content:center;
+}
+.check-mark svg{width:11px; height:11px;}
+
+/* ---------- HOW IT WORKS ---------- */
+.how{
+  padding:110px 0;
+  background:var(--ink);
+  color:var(--paper);
+  position:relative;
+}
+.how-head{max-width:560px; margin-bottom:70px;}
+.how-head h2{font-size:clamp(1.9rem,3vw,2.5rem); color:var(--paper); margin-top:14px;}
+.how-head p{color:var(--muted-on-ink); margin-top:16px; font-size:1.02rem;}
+.steps{
+  position:relative;
+  display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+}
+.steps::before{
+  content:'';
+  position:absolute; top:29px; left:0; right:0; height:1px;
+  background:rgba(198,155,62,0.25);
+}
+.steps::after{
+  content:'';
+  position:absolute; top:29px; left:0; height:1px;
+  background:var(--brass);
+  width:0%;
+  transition:width 1.4s cubic-bezier(.65,0,.35,1);
+}
+.steps.in-view::after{width:100%;}
+.step{
+  padding-right:28px; position:relative;
+}
+.step-num{
+  width:58px; height:58px;
+  border:1px solid var(--brass);
+  background:var(--ink);
+  color:var(--brass-light);
+  font-family:var(--serif); font-weight:600; font-size:1.3rem;
+  display:flex; align-items:center; justify-content:center;
+  position:relative; z-index:2;
+  margin-bottom:22px;
+  opacity:0; transform:scale(0.6);
+  transition:opacity .5s ease, transform .5s cubic-bezier(.34,1.56,.64,1);
+}
+.steps.in-view .step-num{opacity:1; transform:scale(1);}
+.step:nth-child(1) .step-num{transition-delay:.1s;}
+.step:nth-child(2) .step-num{transition-delay:.5s;}
+.step:nth-child(3) .step-num{transition-delay:.9s;}
+.step:nth-child(4) .step-num{transition-delay:1.3s;}
+.step h3{font-size:1.1rem; color:var(--paper); margin-bottom:10px; font-weight:600;}
+.step p{font-size:0.92rem; color:var(--muted-on-ink);}
+
+/* ---------- INCLUDED / EMAIL MOCKUP ---------- */
+.included{
+  padding:110px 0;
+  background:var(--paper);
+}
+.included-grid{
+  display:grid; grid-template-columns:0.9fr 1.1fr; gap:60px; align-items:center;
+}
+.included h2{font-size:clamp(1.9rem,3vw,2.5rem); margin:14px 0 30px;}
+.feature-list{display:flex; flex-direction:column; gap:22px;}
+.feature-item{display:flex; gap:16px;}
+.feature-icon{
+  width:42px; height:42px; flex-shrink:0;
+  background:var(--ink); color:var(--brass-light);
+  display:flex; align-items:center; justify-content:center;
+}
+.feature-icon svg{width:19px; height:19px;}
+.feature-item h4{font-size:1rem; margin-bottom:4px; font-weight:600; color:var(--ink-text);}
+.feature-item p{font-size:0.9rem; color:var(--muted-on-paper);}
+
+.email-mock{
+  background:#fff;
+  border:1px solid var(--paper-2);
+  box-shadow:0 30px 60px -30px rgba(16,27,45,0.35);
+  transform:rotate(1.4deg);
+  transition:transform .5s ease;
+}
+.email-mock:hover{transform:rotate(0deg);}
+.email-bar{
+  background:var(--ink);
+  color:var(--paper);
+  padding:12px 18px;
+  font-family:var(--mono); font-size:0.7rem; letter-spacing:0.05em;
+  display:flex; align-items:center; gap:8px;
+}
+.email-bar .dot{width:7px; height:7px; border-radius:50%; background:var(--rust-light);}
+.email-body{padding:26px 24px;}
+.email-field{font-size:0.85rem; color:var(--muted-on-paper); margin-bottom:10px;}
+.email-field b{color:var(--ink-text); font-weight:600;}
+.email-hl{background:rgba(198,155,62,0.28); padding:1px 3px;}
+.email-divider{height:1px; background:var(--paper-2); margin:16px 0;}
+.email-text{font-size:0.86rem; color:#2a3348; line-height:1.7;}
+.email-text p{margin-bottom:12px;}
+
+/* ---------- DIRECTORY PREVIEW ---------- */
+.directory{
+  padding:110px 0 100px;
+  background:var(--ink);
+  color:var(--paper);
+}
+.directory-head{
+  display:flex; justify-content:space-between; align-items:flex-end; gap:30px;
+  margin-bottom:56px; flex-wrap:wrap;
+}
+.directory-head h2{font-size:clamp(1.9rem,3vw,2.5rem); color:var(--paper); margin-top:14px; max-width:520px;}
+.directory-head p{color:var(--muted-on-ink); max-width:360px; font-size:0.95rem;}
+.rolodex{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:22px;
+}
+.rcard{
+  background:var(--ink-2);
+  border:1px solid rgba(198,155,62,0.2);
+  padding:26px 24px 24px;
+  perspective:1000px;
+  position:relative;
+  min-height:230px;
+  cursor:default;
+}
+.rcard .sector-tag{
+  font-family:var(--mono); font-size:0.68rem; letter-spacing:0.06em; text-transform:uppercase;
+  color:var(--brass-light); margin-bottom:14px; display:block;
+}
+.rcard h3{font-size:1.18rem; color:var(--paper); margin-bottom:14px; font-weight:600;}
+.rcard ul{display:flex; flex-direction:column; gap:9px;}
+.rcard li{
+  font-size:0.86rem; color:var(--muted-on-ink);
+  display:flex; align-items:center; gap:9px;
+}
+.rcard li::before{
+  content:''; width:4px; height:4px; background:var(--brass); flex-shrink:0;
+}
+.rcard .blur-line{
+  filter:blur(3.5px);
+  user-select:none;
+  color:#7c8bad;
+}
+.rcard-lock{
+  position:absolute; bottom:18px; right:20px;
+  font-family:var(--mono); font-size:0.68rem; color:var(--brass-light);
+  display:flex; align-items:center; gap:6px;
+  opacity:0.85;
+}
+.rcard-lock svg{width:12px; height:12px;}
+.directory-more{
+  text-align:center; margin-top:46px;
+  font-size:0.95rem; color:var(--muted-on-ink);
+}
+.directory-more b{color:var(--brass-light); font-weight:600;}
+
+/* ---------- TRUST ---------- */
+.trust{
+  background:var(--paper);
+  padding:70px 0;
+  border-top:1px solid var(--paper-2);
+  border-bottom:1px solid var(--paper-2);
+}
+.trust-row{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:30px;
+}
+.trust-item{text-align:left;}
+.trust-item svg{width:26px; height:26px; color:var(--rust); margin-bottom:14px;}
+.trust-item h4{font-size:0.98rem; margin-bottom:6px; font-weight:600;}
+.trust-item p{font-size:0.85rem; color:var(--muted-on-paper);}
+
+/* ---------- PRICING ---------- */
+.pricing{
+  padding:120px 0;
+  background:var(--paper);
+  position:relative;
+}
+.pricing-card{
+  max-width:560px; margin:0 auto;
+  background:var(--ink);
+  color:var(--paper);
+  padding:56px 50px;
+  position:relative;
+  text-align:center;
+  box-shadow:0 40px 80px -40px rgba(16,27,45,0.5);
+}
+.pricing-card::before{
+  content:'';
+  position:absolute; top:14px; left:14px; right:14px; bottom:14px;
+  border:1px solid rgba(198,155,62,0.3);
+  pointer-events:none;
+}
+.pricing-tag{
+  font-family:var(--mono); font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase;
+  color:var(--brass-light); margin-bottom:18px; display:block;
+}
+.pricing-card h2{font-size:1.6rem; color:var(--paper); margin-bottom:22px;}
+.price-row{
+  display:flex; align-items:baseline; justify-content:center; gap:12px; margin-bottom:6px;
+}
+.price-old{font-size:1.15rem; color:var(--muted-on-ink); text-decoration:line-through;}
+.price-new{font-family:var(--serif); font-weight:700; font-size:3.2rem; color:var(--brass-light);}
+.price-cur{font-size:1rem; color:var(--muted-on-ink);}
+.pricing-card .price-note{font-size:0.85rem; color:var(--muted-on-ink); margin-bottom:34px;}
+.pricing-list{
+  text-align:left; display:flex; flex-direction:column; gap:13px; margin-bottom:38px;
+  border-top:1px solid rgba(255,255,255,0.12);
+  border-bottom:1px solid rgba(255,255,255,0.12);
+  padding:26px 0;
+}
+.pricing-list li{display:flex; gap:12px; font-size:0.92rem; color:var(--paper); align-items:flex-start;}
+.btn-primary.full{width:100%; padding:18px 30px; font-size:1.05rem;}
+.pay-methods{
+  margin-top:20px; font-size:0.78rem; color:var(--muted-on-ink);
+  font-family:var(--mono); letter-spacing:0.03em;
+}
+
+/* ---------- FAQ ---------- */
+.faq{
+  padding:110px 0 130px;
+  background:var(--paper);
+}
+.faq-head{max-width:520px; margin-bottom:50px;}
+.faq-head h2{font-size:clamp(1.9rem,3vw,2.5rem); margin-top:14px;}
+.faq-list{max-width:760px;}
+.faq-item{
+  border-bottom:1px solid var(--paper-2);
+}
+.faq-q{
+  width:100%; text-align:left; background:none; border:none; cursor:pointer;
+  display:flex; justify-content:space-between; align-items:center; gap:20px;
+  padding:24px 0; font-family:var(--sans); font-size:1.02rem; font-weight:600; color:var(--ink-text);
+}
+.faq-q .plus{
+  flex-shrink:0; width:22px; height:22px; position:relative;
+}
+.faq-q .plus::before, .faq-q .plus::after{
+  content:''; position:absolute; background:var(--rust); top:50%; left:50%;
+  transform:translate(-50%,-50%);
+}
+.faq-q .plus::before{width:14px; height:2px;}
+.faq-q .plus::after{width:2px; height:14px; transition:transform .3s ease;}
+.faq-item.open .faq-q .plus::after{transform:translate(-50%,-50%) rotate(90deg); }
+.faq-a{
+  max-height:0; overflow:hidden; transition:max-height .4s ease;
+}
+.faq-a-inner{padding-bottom:24px; font-size:0.94rem; color:var(--muted-on-paper); max-width:64ch;}
+
+/* ---------- FOOTER ---------- */
+footer{
+  background:var(--ink);
+  color:var(--muted-on-ink);
+  padding:60px 0 34px;
+}
+.footer-top{
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px;
+  padding-bottom:36px; border-bottom:1px solid rgba(255,255,255,0.1);
+  margin-bottom:26px;
+}
+.footer-logo{display:flex; align-items:center; gap:10px; color:var(--paper);}
+.footer-logo svg{width:24px; height:24px;}
+.footer-cta-line{font-size:0.92rem;}
+.footer-cta-line a{color:var(--brass-light); border-bottom:1px solid var(--brass-light);}
+.footer-bottom{
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px;
+  font-size:0.78rem;
+}
+
+/* ---------- REVEAL ---------- */
+.reveal{opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.visible{opacity:1; transform:translateY(0);}
+.reveal-stagger > *{opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease;}
+.reveal-stagger.visible > *{opacity:1; transform:translateY(0);}
+.reveal-stagger.visible > *:nth-child(1){transition-delay:.05s;}
+.reveal-stagger.visible > *:nth-child(2){transition-delay:.15s;}
+.reveal-stagger.visible > *:nth-child(3){transition-delay:.25s;}
+.reveal-stagger.visible > *:nth-child(4){transition-delay:.35s;}
+
+/* counter */
+.count-up{font-variant-numeric:tabular-nums;}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr; gap:60px;}
+  .hero{padding:150px 0 90px; text-align:left;}
+  .hero-visual{min-height:320px; order:-1;}
+  .problem-grid{grid-template-columns:1fr; gap:36px;}
+  .included-grid{grid-template-columns:1fr; gap:44px;}
+  .included-grid .email-mock{order:-1; max-width:440px;}
+  .rolodex{grid-template-columns:repeat(2,1fr);}
+  .steps{grid-template-columns:repeat(2,1fr); row-gap:44px;}
+  .steps::before,.steps::after{display:none;}
+  .trust-row{grid-template-columns:repeat(2,1fr); row-gap:30px;}
+}
+@media (max-width:720px){
+  nav.main-nav{
+    position:fixed; top:0; right:0; height:100vh; width:76%;
+    background:var(--ink); flex-direction:column; justify-content:center; gap:30px;
+    padding:40px; transform:translateX(100%); transition:transform .4s ease;
+    z-index:99;
+  }
+  nav.main-nav.open{transform:translateX(0);}
+  .menu-toggle{display:block; z-index:101;}
+  .header-cta{display:none;}
+  nav.main-nav a{font-size:1.15rem;}
+  .rolodex{grid-template-columns:1fr;}
+  .steps{grid-template-columns:1fr;}
+  .trust-row{grid-template-columns:1fr;}
+  .pricing-card{padding:44px 26px;}
+  .price-new{font-size:2.5rem;}
+  .container{padding:0 20px;}
+}
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="24" r="9" stroke="currentColor" stroke-width="2.4"/>
+        <path d="M23 24H43M43 24V17M37 24V19" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/>
+        <path d="M13 22.5L16 25.5L19.5 20.5" stroke="#C69B3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>
+        <span class="logo-word">Chave Directa</span>
+        <span class="logo-sub">RH · Moçambique</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#sobre">O Problema</a>
+      <a href="#como-funciona">Como Funciona</a>
+      <a href="#diretorio">Diretório</a>
+      <a href="#preco">Preço</a>
+      <a href="#faq">Perguntas</a>
+    </nav>
+    <button class="header-cta" onclick="location.href='#preco'">Quero a Lista</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow-row"><span class="dot"></span><span>Candidaturas espontâneas · Moçambique</span></div>
+      <h1>Não esperes por um anúncio. <span class="accent">Bate directamente à porta certa.</span></h1>
+      <p class="lead">Mais de 35 contactos directos de Recursos Humanos das maiores empresas de Moçambique — bancos, auditoras, indústrias e consultoras — prontos para receberes o teu CV hoje.</p>
+      <div class="hero-ctas">
+        <button class="btn-primary" onclick="location.href='#preco'"><span>Obter a Lista Completa</span></button>
+        <a href="#como-funciona" class="btn-ghost-link">Ver como funciona</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="num count-up" data-target="35">0</span><span class="lbl">Empresas & contactos</span></div>
+        <div class="hero-stat"><span class="num count-up" data-target="100">0</span><span class="lbl">% prontos a usar</span></div>
+        <div class="hero-stat"><span class="num">1</span><span class="lbl">Email modelo incluído</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="key-stage">
+        <svg id="keySvg" viewBox="0 0 360 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="draw-path" cx="120" cy="120" r="62" stroke="#E0BA66" stroke-width="4"/>
+          <path class="draw-path" d="M180 120H320M320 120V90M320 120V150M280 120V98M280 120V142M240 120V104" stroke="#E0BA66" stroke-width="4" stroke-linecap="square"/>
+          <path class="fill-fade" d="M92 108L114 130L150 90" stroke="#F3ECDD" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect class="fill-fade" x="56" y="200" width="140" height="86" rx="2" stroke="#93A3C0" stroke-width="2"/>
+          <path class="fill-fade" d="M56 202L126 250L196 202" stroke="#93A3C0" stroke-width="2"/>
+        </svg>
+        <div class="flash"></div>
+      </div>
+      <p class="hero-caption">O contacto certo abre a porta que um anúncio nunca mostra</p>
+    </div>
+  </div>
+</section>
+
+<section class="problem" id="sobre">
+  <div class="container problem-grid">
+    <div>
+      <span class="stamp">O mercado oculto</span>
+      <h2>A maioria das vagas em Moçambique nunca chega a ser publicada</h2>
+    </div>
+    <div class="problem-copy reveal">
+      <p>Muitas empresas preenchem posições através de candidaturas espontâneas que <strong>já têm guardadas</strong>, antes mesmo de pensarem em anunciar publicamente. É o mercado de emprego oculto — e é exactamente aí que esta lista te coloca.</p>
+      <p>Em vez de ficares à espera de um anúncio e competir com centenas de candidatos, tens acesso directo aos departamentos de RH de bancos, seguradoras, auditoras internacionais, indústrias, energia e gás, tecnologia e logística que operam no país.</p>
+      <ul class="problem-list">
+        <li><span class="check-mark"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>O email exacto de RH para onde enviar o teu CV, em cada empresa</li>
+        <li><span class="check-mark"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Um resumo do que cada empresa faz, para adaptares a tua mensagem</li>
+        <li><span class="check-mark"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Um modelo de email profissional, pronto a copiar e personalizar</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="how on-ink" id="como-funciona">
+  <div class="container">
+    <div class="how-head reveal">
+      <span class="section-tag">04 passos</span>
+      <h2>Como usar este guia</h2>
+      <p>Simples, directo, e podes começar ainda hoje.</p>
+    </div>
+    <div class="steps" id="stepsBlock">
+      <div class="step"><div class="step-num">01</div><h3>Prepara o teu CV</h3><p>Actualiza o teu currículo em PDF, com dados correctos, experiência recente e formação académica.</p></div>
+      <div class="step"><div class="step-num">02</div><h3>Escolhe 3 a 5 empresas</h3><p>Selecciona empresas cujo sector combina com o teu perfil, por semana, em vez de enviares tudo de uma vez.</p></div>
+      <div class="step"><div class="step-num">03</div><h3>Usa o modelo de email</h3><p>Personaliza os campos destacados com os teus dados e uma frase sobre porque queres trabalhar naquela empresa.</p></div>
+      <div class="step"><div class="step-num">04</div><h3>Regista e acompanha</h3><p>Cria uma lista simples com empresa, data de envio e resposta. Faz follow-up após 2 a 3 semanas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="included" id="incluido">
+  <div class="container included-grid">
+    <div class="reveal">
+      <span class="section-tag">O que recebes</span>
+      <h2>Um email pronto a enviar, não apenas uma lista de nomes</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 6L12 13L21 6" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="5" width="18" height="14" rx="1" stroke="currentColor" stroke-width="1.8"/></svg></div>
+          <div><h4>Diretório de 35+ contactos</h4><p>Organizado por sector, com o email de RH exacto de cada empresa.</p></div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4H20V20H4V4Z" stroke="currentColor" stroke-width="1.8"/><path d="M8 9H16M8 13H16M8 17H12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <div><h4>Modelo de email profissional</h4><p>Estrutura testada, com campos a personalizar em segundos.</p></div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 12L11 14.5L15.5 9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><h4>Instruções e checklist final</h4><p>Como nomear e anexar o CV correctamente, e o que rever antes de enviar.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="email-mock reveal">
+      <div class="email-bar"><span class="dot"></span> NOVA MENSAGEM</div>
+      <div class="email-body">
+        <div class="email-field"><b>Para:</b> <span class="email-hl">email de RH — ver diretório</span></div>
+        <div class="email-field"><b>Assunto:</b> Candidatura Espontânea – <span class="email-hl">Área Pretendida</span></div>
+        <div class="email-divider"></div>
+        <div class="email-text">
+          <p>Exmos. Senhores,</p>
+          <p>Venho por este meio apresentar a minha candidatura espontânea para integrar o vosso quadro de pessoal na área de <span class="email-hl">Recursos Humanos</span>, não havendo, do meu conhecimento, uma vaga aberta neste momento.</p>
+          <p>Sou <span class="email-hl">Licenciado(a) em Gestão</span>, com <span class="email-hl">3 anos</span> de experiência...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="directory on-ink" id="diretorio">
+  <div class="container">
+    <div class="directory-head reveal">
+      <div>
+        <span class="section-tag">O diretório</span>
+        <h2>35+ contactos directos de RH, organizados por sector</h2>
+      </div>
+      <p>Banca, auditoria, energia, imobiliário, tecnologia e mais — cada empresa com o seu email de RH e uma dica de como abordar.</p>
+    </div>
+    <div class="rolodex reveal-stagger">
+      <div class="rcard">
+        <span class="sector-tag">Banca & Seguros</span>
+        <h3>9 instituições financeiras</h3>
+        <ul>
+          <li>Bancos comerciais e de desenvolvimento</li>
+          <li>Seguradoras pan-africanas</li>
+          <li class="blur-line">nome@banco-████████.co.mz</li>
+        </ul>
+        <div class="rcard-lock"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="10" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.6"/></svg>Na lista completa</div>
+      </div>
+      <div class="rcard">
+        <span class="sector-tag">Auditoria & Consultoria</span>
+        <h3>10 firmas, incluindo Big Four</h3>
+        <ul>
+          <li>Auditoras internacionais</li>
+          <li>Consultoras de contabilidade</li>
+          <li class="blur-line">rh@consultoria-████.com</li>
+        </ul>
+        <div class="rcard-lock"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="10" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.6"/></svg>Na lista completa</div>
+      </div>
+      <div class="rcard">
+        <span class="sector-tag">Energia & Indústria</span>
+        <h3>6 empresas de gás e indústria</h3>
+        <ul>
+          <li>Projectos de gás natural do Rovuma</li>
+          <li>Indústria agro-alimentar</li>
+          <li class="blur-line">recruit@energia-████.com</li>
+        </ul>
+        <div class="rcard-lock"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="10" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.6"/></svg>Na lista completa</div>
+      </div>
+      <div class="rcard">
+        <span class="sector-tag">Consultoria de RH</span>
+        <h3>3 consultoras de recrutamento</h3>
+        <ul>
+          <li>Outsourcing e recrutamento</li>
+          <li>Recrutam para dezenas de clientes</li>
+          <li class="blur-line">carreiras@████consulting.co.mz</li>
+        </ul>
+        <div class="rcard-lock"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="10" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.6"/></svg>Na lista completa</div>
+      </div>
+      <div class="rcard">
+        <span class="sector-tag">Imobiliário</span>
+        <h3>3 operadoras de zonas económicas</h3>
+        <ul>
+          <li>Gestão de propriedades e parques</li>
+          <li>Zonas económicas sustentáveis</li>
+          <li class="blur-line">vaga@████parks.co.mz</li>
+        </ul>
+        <div class="rcard-lock"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="10" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.6"/></svg>Na lista completa</div>
+      </div>
+      <div class="rcard">
+        <span class="sector-tag">Tecnologia & Logística</span>
+        <h3>3 operadoras e transportadoras</h3>
+        <ul>
+          <li>Telecomunicações e TI</li>
+          <li>Logística e transporte de carga</li>
+          <li class="blur-line">recrutamento@████tel.co.mz</li>
+        </ul>
+        <div class="rcard-lock"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="10" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.6"/></svg>Na lista completa</div>
+      </div>
+    </div>
+    <p class="directory-more">Cada sector inclui uma <b>dica específica</b> sobre que competências destacar para aquele tipo de empresa.</p>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container trust-row reveal-stagger">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 3L20 7V12C20 16.5 16.5 20 12 21C7.5 20 4 16.5 4 12V7L12 3Z" stroke="currentColor" stroke-width="1.7"/></svg>
+      <h4>Pagamento seguro</h4>
+      <p>M-Pesa, e-Mola ou transferência bancária.</p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14H11L10 22L20 9H13L13 2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+      <h4>Entrega imediata</h4>
+      <p>Recebes o PDF por email logo após a confirmação.</p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 12H20M4 12L10 6M4 12L10 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h4>Actualizado</h4>
+      <p>Contactos revistos, sem intermediários pelo caminho.</p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 21C12 21 4 15.5 4 9.5C4 6.5 6.5 4.5 9 4.5C10.5 4.5 11.5 5.2 12 6C12.5 5.2 13.5 4.5 15 4.5C17.5 4.5 20 6.5 20 9.5C20 15.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.7"/></svg>
+      <h4>Feito para Moçambique</h4>
+      <p>Empresas que realmente operam e contratam no país.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="preco">
+  <div class="container">
+    <div class="pricing-card reveal">
+      <span class="pricing-tag">Acesso único · Sem mensalidades</span>
+      <h2>A Lista Completa de Contactos</h2>
+      <div class="price-row">
+        <span class="price-old">700 MT</span>
+        <span class="price-new">350</span>
+        <span class="price-cur">MT</span>
+      </div>
+      <p class="price-note">Pagamento único · Acesso vitalício ao PDF</p>
+      <ul class="pricing-list">
+        <li><span class="check-mark"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>35+ contactos directos de RH, por sector</li>
+        <li><span class="check-mark"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Modelo de email pronto a personalizar</li>
+        <li><span class="check-mark"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Instruções passo-a-passo para anexar o CV</li>
+        <li><span class="check-mark"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Checklist final antes de enviares</li>
+      </ul>
+      <button class="btn-primary full"><span>Comprar Agora — 350 MT</span></button>
+      <p class="pay-methods">M-PESA · E-MOLA · TRANSFERÊNCIA BANCÁRIA</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-head reveal">
+      <span class="section-tag">Dúvidas</span>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">Como recebo a lista depois de comprar?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Após a confirmação do pagamento, o PDF é enviado directamente para o teu email. Não precisas de instalar nada.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Há garantia de resposta das empresas?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Este é um guia de candidaturas espontâneas — mostras iniciativa ao contactares directamente o RH. Não há garantia de resposta imediata, mas és tu que decides quando e onde bater à porta, em vez de esperares por um anúncio.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Os contactos servem para qualquer área profissional?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Sim. O diretório cobre bancos, seguradoras, auditoras, indústrias, energia, imobiliário, tecnologia e logística — cada um com uma dica sobre que perfis costumam procurar.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Posso usar o modelo de email para várias candidaturas?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Sim, o modelo é reutilizável. A recomendação é personalizares cada envio, escolhendo 3 a 5 empresas por semana em vez de enviares o mesmo texto genérico para todas ao mesmo tempo.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="24" r="9" stroke="currentColor" stroke-width="2.4"/>
+          <path d="M23 24H43M43 24V17M37 24V19" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/>
+        </svg>
+        <span class="logo-word" style="font-size:1.05rem;">Chave Directa</span>
+      </div>
+      <div class="footer-cta-line">Pronto para começar? <a href="#preco">Obtém a lista completa →</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Chave Directa. Candidaturas espontâneas · Sem esperar por anúncios · Sem intermediários.</span>
+      <span>Feito para quem procura emprego em Moçambique.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Header scroll state
+const header = document.getElementById('siteHeader');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Mobile menu
+const menuToggle = document.getElementById('menuToggle');
+const mainNav = document.getElementById('mainNav');
+menuToggle.addEventListener('click', () => {
+  mainNav.classList.toggle('open');
+  menuToggle.textContent = mainNav.classList.contains('open') ? '✕' : '☰';
+});
+mainNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mainNav.classList.remove('open');
+  menuToggle.textContent = '☰';
+}));
+
+// Reveal on scroll
+const revealEls = document.querySelectorAll('.reveal, .reveal-stagger, .steps');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible', 'in-view');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+revealEls.forEach(el => io.observe(el));
+
+// Count-up stats
+const counters = document.querySelectorAll('.count-up');
+const counterIO = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = parseInt(el.dataset.target, 10);
+      let cur = 0;
+      const step = Math.max(1, Math.round(target / 40));
+      const timer = setInterval(() => {
+        cur += step;
+        if (cur >= target) { cur = target; clearInterval(timer); }
+        el.textContent = cur;
+      }, 30);
+      counterIO.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+counters.forEach(c => counterIO.observe(c));
+
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const answer = item.querySelector('.faq-a');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(open => {
+      open.classList.remove('open');
+      open.querySelector('.faq-a').style.maxHeight = null;
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  });
+});
+</script>
+</body>
+</html>
