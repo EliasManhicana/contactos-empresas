@@ -297,7 +297,7 @@
         <li><span class="check-mark"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Instruções passo-a-passo para anexar o CV</li>
         <li><span class="check-mark"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Checklist final antes de enviares</li>
       </ul>
-      <button class="btn-primary full"><span>Comprar Agora — 99 MT</span></button>
+      <button class="btn-primary full" data-checkout><span>Comprar Agora — 99 MT</span></button>
       <p class="pay-methods">M-PESA · E-MOLA · TRANSFERÊNCIA BANCÁRIA</p>
     </div>
   </div>
@@ -348,6 +348,17 @@
     </div>
   </div>
 </footer>
+
+<aside class="mobile-checkout" aria-label="Finalizar compra">
+  <div class="mobile-checkout-price">
+    <span>Acesso vitalício</span>
+    <strong>99 MT</strong>
+  </div>
+  <button class="mobile-checkout-button" type="button" data-checkout>
+    Comprar agora
+    <span aria-hidden="true">→</span>
+  </button>
+</aside>
 
 <div class="shot-modal" id="shotModal" aria-hidden="true">
   <button class="shot-modal-nav prev" id="shotModalPrev" aria-label="Testemunho anterior">‹</button>
