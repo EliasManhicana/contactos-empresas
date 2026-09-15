@@ -638,6 +638,7 @@ footer{
   margin-bottom:26px;
 }
 .footer-logo{display:flex; align-items:center; gap:10px; color:var(--ink-text);
+}
 .footer-logo svg{width:24px; height:24px;}
 .footer-cta-line{font-size:0.92rem;}
 .footer-cta-line a{color:var(--brass-light); border-bottom:1px solid var(--brass-light);}
