@@ -621,7 +621,7 @@ nav.main-nav a:hover::after{width:100%;}
 .faq-a{
   max-height:0; overflow:hidden; transition:max-height .4s ease;
 }
-.faq-a-inner{padding-bottom:24px; font-size:0.94rem; color:var(--muted-on-paper); max-width:64ch;}
+.faq-a-inner{padding-bottom:24px; font-size:0.94rem; color:var(--muted-on-paper); width:100%;}
 
 /* ---------- FOOTER ---------- */
 footer{
