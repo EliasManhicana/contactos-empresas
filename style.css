@@ -490,6 +490,7 @@ nav.main-nav a:hover::after{width:100%;}
 .shots{margin-top:10px;}
 .shots-stage{
   position:relative;
+  overflow:hidden;
   height:560px;
   max-width:980px;
   margin:0 auto;
